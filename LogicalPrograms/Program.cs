@@ -8,6 +8,7 @@ namespace LogicalPrograms
 		/// P1 - Printing the fibonacci series
 		/// P2 - Checking the number is perfect number or not
 		/// P3 - Printing the prime number series between  to N
+		/// P4 - Reversing the number
 		/// </summary>
 		/// <param name="args">The arguments.</param>
 		static void Main(string[] args)
@@ -17,6 +18,7 @@ namespace LogicalPrograms
 			Console.WriteLine("1 - Fibonacci Series");
 			Console.WriteLine("2 - Perfect Number");
 			Console.WriteLine("3 - Prime Number Series");
+			Console.WriteLine("4 - Reverse the number");
 
 			//Read choice from the user
 			Console.WriteLine("Enter Your choice:");
@@ -42,6 +44,12 @@ namespace LogicalPrograms
 					prime.ReadInput();
 					break;
 
+				//creating object for Reverse a number and calling the method 
+				case 4:
+					ReverseNumber reverse = new ReverseNumber();
+					reverse.ReadInput();
+					break;
+
 				default:
 					break;
 			}
@@ -50,3 +58,4 @@ namespace LogicalPrograms
 		}
 	}
 }
+
